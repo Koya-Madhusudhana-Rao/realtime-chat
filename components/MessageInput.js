@@ -16,7 +16,7 @@ export default function MessageInput({ onSend }) {
         <div>
             <textarea
                 value={text}
-             setText(e.target.value)}
+                onChange={(e) => setText(e.target.value)}
                 rows={5}
                 placeholder="Type your message..."
                 style={{
