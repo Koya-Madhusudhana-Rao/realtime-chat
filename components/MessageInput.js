@@ -38,6 +38,30 @@ export default function MessageInput({ onSend }) {
             >
                 Send
             </button>
+
+            {/* 🔥 Animated Footer */}
+            <div style={styles.footer}>
+                <span style={styles.text}>
+                    made by chota vali topper
+                </span>
+            </div>
         </div>
     );
 }
+
+const styles = {
+    footer: {
+        marginTop: "15px",
+        textAlign: "center",
+    },
+
+    text: {
+        fontSize: "20px",
+        fontWeight: "bold",
+        background: "linear-gradient(270deg, #ff4d4f, #40a9ff, #73d13d, #ff4d4f)",
+        backgroundSize: "600% 600%",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        animation: "gradientMove 5s ease infinite",
+    },
+};
