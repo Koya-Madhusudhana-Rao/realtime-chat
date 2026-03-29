@@ -8,7 +8,7 @@ export default function useChat() {
 
     useEffect(() => {
         const unsubscribe = subscribeMessages(setMessages);
-        return () => unsubscribe();
+        
     }, []);
 
     return { messages };
