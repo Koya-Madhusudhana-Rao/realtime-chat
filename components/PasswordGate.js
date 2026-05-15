@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function PasswordGate({ onAccess }) {
     const [password, setPassword] = useState("");
 
-    const ROOM_PASSWORD = "charan";
+    const ROOM_PASSWORD = "heysiri";
 
     return (
         <div style={{ textAlign: "center", marginTop: 100 }}>
